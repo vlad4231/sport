@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>СПОРТ БАР</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+    }
+    header {
+      background-color: #008000;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 18px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      border: 2px solid #008000;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .booking {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .booking input, .booking button {
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+      border-radius: 5px;
+      border: none;
+    }
+    .booking button {
+      background-color: #008000;
+      color: white;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>СПОРТ БАР</h1>
+    <p>Уютное место для просмотра матчей и встреч с друзьями</p>
+  </header>
+
+  <section>
+    <h2>Бронирование столиков</h2>
+    <div class="booking">
+      <input type="text" placeholder="Ваше имя">
+      <input type="text" placeholder="Телефон или Telegram">
+      <input type="date">
+      <input type="time">
+      <input type="number" placeholder="Количество гостей">
+      <button>Забронировать</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Афиша матчей</h2>
+    <ul>
+      <li>13 июля — Евро 2024: Финал</li>
+      <li>14 июля — UFC 304: Прямая трансляция</li>
+      <li>16 июля — Футбол: Спартак vs Зенит</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Галерея</h2>
+    <div class="gallery">
+      <img src="https://placehold.co/300x200/008000/FFFFFF?text=Бар+1" alt="Бар">
+      <img src="https://placehold.co/300x200/006400/FFFFFF?text=Бар+2" alt="Бар">
+      <img src="https://placehold.co/300x200/004d00/FFFFFF?text=Бар+3" alt="Бар">
+    </div>
+  </section>
+
+  <section>
+    <h2>Контакты</h2>
+    <p>📍 ТРК Шамса, Проспект Победы, 67/2, 10 км м-н, Петропавловск-Камчатский</p>
+    <p>📞 +7 (999) 123-45-67</p>
+    <p>🔗 Telegram | Instagram (в разработке)</p>
+  </section>
+
+  <footer>
+    &copy; 2025 СПОРТ БАР. Все права защищены.
+  </footer>
+</body>
+</html>
