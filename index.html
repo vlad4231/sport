@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>СПОРТ БАР - Бронирование</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Стили для полей даты и времени */
+    .input-group {
+      position: relative;
+      margin-bottom: 15px;
+    }
+    
+    .input-group label {
+      position: absolute;
+      top: -10px;
+      left: 10px;
+      background: white;
+      padding: 0 5px;
+      font-size: 12px;
+      color: #666;
+    }
+    
+    .input-group input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    
+    /* Остальные стили остаются без изменений */
+    /* ... */
+  </style>
+</head>
+<body>
+
+  <!-- Остальная часть HTML остается без изменений -->
+  <!-- ... -->
+
+  <section id="booking">
+    <h2>Бронирование столика</h2>
+    <form id="booking-form">
+      <input type="text" name="name" placeholder="Ваше имя" required>
+      <input type="tel" name="phone" placeholder="Телефон" required>
+      
+      <div class="input-group">
+        <label for="date">Дата бронирования</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      
+      <div class="input-group">
+        <label for="time">Время бронирования</label>
+        <input type="time" id="time" name="time" required>
+      </div>
+      
+      <select name="table-type" required>
+        <option value="" disabled selected>Выберите тип столика</option>
+        <option value="standard">Стандартный (2-4 чел)</option>
+        <option value="vip">VIP (4-6 чел)</option>
+        <option value="sofa">Диванная зона (4-8 чел)</option>
+      </select>
+      
+      <textarea name="message" placeholder="Дополнительные пожелания" rows="3"></textarea>
+      <button type="submit">Забронировать</button>
+    </form>
+  </section>
+
+  <!-- Остальная часть HTML остается без изменений -->
+  <!-- ... -->
+
+  <script>
+    // Добавляем подсказки для полей даты и времени
+    document.addEventListener('DOMContentLoaded', function() {
+      const dateInput = document.getElementById('date');
+      const timeInput = document.getElementById('time');
+      
+      // Устанавливаем подсказки для мобильных устройств
+      if (/Mobi/.test(navigator.userAgent)) {
+        dateInput.setAttribute('placeholder', 'Дата бронирования');
+        timeInput.setAttribute('placeholder', 'Время бронирования');
+      }
+    });
+    
+    // Остальной JavaScript остается без изменений
+    // ...
+  </script>
+</body>
+</html>
